@@ -1,0 +1,111 @@
+/* Your Name */
+/* Date */
+
+/* Resets the browser with margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centers the content, sets max width, and adds padding/shadow. */
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #0000001a;
+}
+
+/* Sets the overall background color, creates center alignment, color, and gradient. */
+body {
+    background: #d92323; /* Fallback for older browsers */
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    background: linear-gradient(to right, #d5d8b4, #394d1e);
+}
+
+/* Styles the top section with a red background, white text, and large font. */
+header {
+    background: #d92323;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+/* Adds a yellow background and centers navigation links. */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* centers items horizontally */
+    background-color: #f7da39;
+}
+
+/* Adds margin to navigation items. */
+li {
+    margin: 0 20px;
+}
+
+/* Creates horizontal navigation links. */
+nav a {
+    display: inline;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* Colors nav once the page is visited. */
+nav a:visited {
+    text-decoration: underline;
+    color: darkgreen;
+}
+
+/* Colors the nav when the mouse is hovered on text. */
+nav a:hover {
+    background-color: #fff;
+    color: #d92323;
+}
+
+/* Floats left (50% width), styles the sidebar. */
+section {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+/* Clears the floats and returns the page to normal flow. */
+main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Makes images responsive to their containers. */
+img {
+    height: 50%; /* Assuming intended for responsive height */
+    max-width: 70%;
+    opacity: .7;
+}
+
+/* Makes images responsive and change the images on hover */
+img:hover {
+    border: 1px solid #ddc10f;
+    opacity: 1;
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out; /* Smooth scaling effect */
+}
+
+/* Clears floats, applies a red background, and centers the white text. */
+footer {
+    clear: both; /* Fix float issues */
+    background: #d92323;
+    color: white;
+    text-align: center;
+}
